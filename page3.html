@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>โปรโมชั่น</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+    <nav>
+        <div class="logo">&nbsp;&nbsp;โปรโมชั่น</div>
+        <div class="nav-links">
+            <a href="index.html">หน้าหลัก</a>
+            <div class="dropdown">
+                <a href="#">หมวดหมู่ ▼</a>
+                <div class="dropdown-menu">
+                    <a href="กำไล.html">กำไล</a>
+                    <a href="พวงกุญ.html">พวงกุญแจ</a>
+                </div>
+                </div>
+        <a href="page2.html">สินค้าทั้งหมด</a>
+        <a href="page3.html">โปรโมชั่น</a>
+        <a href="page4.html">ช่องทางการติดต่อ</a>
+    </div>
+    </nav>
+
+    <div class="promotion-container">
+        <h2>โปรโมชั่นพิเศษ</h2>
+
+        <div class="promotion">
+             <div class="image-container">
+                <img src="Misty Meadow set.jfif" width="300" height="300">
+                <h3>Misty Meadow set</h3>
+                <p>ซื้อเป็นเซ็ตเหลือ 198เท่านั้น</p>
+                <p><strong>ระยะเวลาโปรโมชั่น:</strong> ตลอดเดือนกุมภาพันธ์ 2025</p>
+                <p><strong>เงื่อนไข:</strong> เฉพาะการสั่งซื้อผ่านเว็บไซต์เท่านั้น</p>
+                <a href="javascript:void(0)" class="details-button" onclick="showDetails('Misty Meadow set 198บาท')">ดูรายละเอียด</a>
+            </div>
+        </div>
+
+        <div class="promotion">
+            <img src="Enchanted blooms set.jfif" width="300" height="300">
+                <h3>Enchanted blooms set</h3>
+                <p>ซื้อเป็นเซ็ตเหลือ 156เท่านั้น</p>
+                <p><strong>ระยะเวลาโปรโมชั่น:</strong> ตลอดเดือนกุมภาพันธ์ 2025</p>
+                <p><strong>เงื่อนไข:</strong> เฉพาะการสั่งซื้อผ่านเว็บไซต์เท่านั้น</p>
+                <a href="javascript:void(0)" class="details-button" onclick="showDetails('Enchanted blooms set 156บาท')">ดูรายละเอียด</a>
+        </div>
+
+        <div class="promotion">
+            <img src="Spring Romance.jpg" width="300" height="300">
+            <h3>Spring Romance</h3>
+            <p>ซื้อ1แถม1  169เท่านั้น</p>
+            <p><strong>ระยะเวลาโปรโมชั่น:</strong> 14-20กุมภาพันธ์ 2025</p>
+            <p><strong>เงื่อนไข:</strong> เฉพาะการสั่งซื้อผ่านเว็บไซต์เท่านั้น</p>
+            <a href="javascript:void(0)" class="details-button" onclick="showDetails('Spring Romance 169บาท')">ดูรายละเอียด</a>
+        </div>
+    </div>
+
+    <div id="detail-view" class="detail-view" style="display:none;">
+        <div class="detail-content">
+            <h4>รายละเอียดการสั่งซื้อ:</h4>
+            <p id="detail-desc"></p>
+            <button onclick="closeDetails()">สั่งซื้อ</button>
+        </div>
+    </div>
+
+    <script>
+        function showDetails(description) {
+            document.getElementById('detail-desc').innerText = description; // แสดงข้อความที่ส่งมา
+            document.getElementById('detail-view').style.display = 'flex'; // แสดงส่วนที่มีรายละเอียด
+        }
+
+        function closeDetails() {
+            document.getElementById('detail-view').style.display = 'none'; // ซ่อนรายละเอียด
+        }
+    </script>
+</body>
+</html>
+

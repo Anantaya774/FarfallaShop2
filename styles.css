@@ -1,0 +1,231 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #9cb286;
+    padding: 15px 0px;
+    box-shadow: 0 2px 5px  rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #facdcc;
+}
+
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    font-family: "Itim", cursive;
+    font-weight: bold;
+    font-size: 35px;
+    font-style: normal;
+    color: #facdcc;
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 0px;
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+}
+
+
+.nav-links a {
+    text-decoration: none;
+    color: #faeed1;
+    font-weight: 500;
+    padding: 8px 12px;
+    transition: color 0.3s, background-color 0.3s;
+    border-radius: 5px;
+    font-family: "Itim", cursive;
+    font-weight: bold;
+    font-size: 20px;
+    font-style: normal;
+    color: #faeed1;
+}
+
+
+.nav-links a:hover {
+    color: #FF9CB6;
+    background-color: #9cb286;
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #facdcc;
+
+}
+
+body {
+    background-color: #faeed1;
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color:#9cb286;
+
+}
+
+
+
+
+.container {
+    display: flex; /* ใช้ flexbox เพื่อจัดเรียงบล็อกในแนวนอน */
+    flex-wrap: wrap; /* ทำให้บล็อกไปยังบรรทัดใหม่เมื่อพื้นที่ไม่พอ */
+    gap: 20px; /* ช่องว่างระหว่างบล็อก */
+}
+.block {
+   
+    display: flex;
+    width: 200px; /* ความกว้างของบล็อค */
+    height: 320px; /* ความสูงของบล็อค */
+    padding: 20px;
+    background-color: #facdcc;
+    border: 2px solid #facdcc;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    
+
+        }
+        img {
+            border-radius: 15px; /* ทำให้ขอบรูปมน */
+            width: 200px; /* กำหนดขนาดของรูป */
+            height: 200px; /* ความสูงของบล็อค */}
+      
+        
+        .details-button {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 14px;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+        
+        .details-button:hover {
+            background-color: #45a049;
+        }
+        
+        
+        /* ปรับปรุงให้ส่วนแสดงรายละเอียดอยู่กลางหน้าจอ */
+        
+        .detail-view {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            /* พื้นหลังมืดเพื่อให้เด่น */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        
+        .detail-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 500px;
+            width: 90%;
+            text-align: center;
+        }
+        
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #45a049;
+        }
+   
+ 
+        .nav-links a,
+        .dropdown > a {
+            text-decoration: none;
+            color: #facdcc;
+            font-size: 20px;
+            text-align: center;
+            padding: 10px 10px;
+            min-width: 130px; /* ทำให้กว้างเท่ากัน */
+            display: inline-block;
+        }
+       
+        /* สไตล์ Dropdown */
+        .dropdown {
+            position: relative;
+        }
+        
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: #9cb286;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            min-width: 200px;
+            top: 100%;
+            left: 0;
+            border-radius: 5px;
+        }
+        
+        .dropdown-menu a {
+            display: block;
+            padding: 10px;
+            color: #facdcc;
+            text-decoration: none;
+            text-align: center;
+        }
+        
+        .dropdown-menu a:hover {
+            background-color: #f1f1f1;
+        }
+        
+        /* แสดง dropdown เมื่อโฮเวอร์ */
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+       /* เพิ่มสไตล์ให้กับหน้า "โปรโมชั่น" */
+.promotion-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Itim', sans-serif;
+}
+
+
+
+.promotion {
+    background-color: #9cb286;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.promotion h3 {
+    font-size: 20px;
+    color: #facdcc;
+    margin-bottom: 10px;
+}
+
+.promotion p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #facdcc;
+}
+
+.promotion strong {
+    color: #facdcc;
+}
